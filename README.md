@@ -29,15 +29,8 @@ A real-time fall detection application built with Python, OpenCV, and Computer V
 
 ### Installation & Setup
 
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/your-username/Hybrid-Edge-Cloud-Fall-Detection.git](https://github.com/your-username/Hybrid-Edge-Cloud-Fall-Detection.git)
-cd Hybrid-Edge-Cloud-Fall-Detection
 
-```
-
-
-2. **Set up a virtual environment:**
+1. **Set up a virtual environment:**
 ```bash
 # On Windows
 python -m venv .venv
@@ -50,14 +43,14 @@ source .venv/bin/activate
 ```
 
 
-3. **Install dependencies:**
+2. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 
 ```
 
 
-4. **Configure environment settings:**
+3. **Configure environment settings:**
 * Rename `conf.json.example` to `conf.json` (or create `conf.json`).
 * Add your API keys and configuration credentials:
 ```json
@@ -86,18 +79,3 @@ python fall_detection.py
 Open your browser and navigate to `http://127.0.0.1:5000` (or the port specified in terminal execution) to access the dashboard.
 
 ---
-
-## 🔒 Security Notice
-
-Do **not** commit actual API keys, credentials, or local configuration tokens to GitHub. Ensure your `conf.json` is listed inside your `.gitignore` file.
-
-```
-
----
-
-### What to do next:
-1. In PyCharm, right-click `PythonProject2` $\rightarrow$ **New** $\rightarrow$ **File**[cite: 1].
-2. Name it `README.md` and paste the markdown block above.
-3. Make sure to update the `your-username` placeholder in the clone URL with your actual GitHub username!
-
-```
