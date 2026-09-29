@@ -1,10 +1,13 @@
 # Hybrid-Edge-Cloud-Framework-for-Real-Time-Fall-Detection
 Real-time fall detection using YOLOv8, MediaPipe and Pushbullet API.
 
+
+```markdown
 # Hybrid Edge-Cloud Fall Detection System
 
 A real-time fall detection application built with Python, OpenCV, and Computer Vision models integrated into a web interface. The system processes video streams to detect fall events and send automated alerts using API integrations.
 
+---
 
 ## 🌟 Key Features
 
@@ -13,17 +16,29 @@ A real-time fall detection application built with Python, OpenCV, and Computer V
 * **Web Dashboard:** Simple Flask-based web interface to monitor video feeds, view detection logs, and manage user authentication.
 * **Modular Architecture:** Designed to run edge inferencing locally while offloading alert events to cloud notification services.
 
+---
+
+
+---
+
 
 ### Prerequisites
 
 * Python 3.8 or higher installed on your system.
 * A webcam (for real-time stream monitoring) or test `.mp4` video files.
 
+### Installation & Setup
+
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/your-username/Hybrid-Edge-Cloud-Fall-Detection.git](https://github.com/your-username/Hybrid-Edge-Cloud-Fall-Detection.git)
+cd Hybrid-Edge-Cloud-Fall-Detection
+
+```
 
 
-
-1. **Set up a virtual environment:**
-
+2. **Set up a virtual environment:**
+```bash
 # On Windows
 python -m venv .venv
 .venv\Scripts\activate
@@ -32,13 +47,14 @@ python -m venv .venv
 python3 -m venv .venv
 source .venv/bin/activate
 
+```
 
 
-2. **Install dependencies:**
-
+3. **Install dependencies:**
+```bash
 pip install -r requirements.txt
 
-
+```
 
 
 4. **Configure environment settings:**
