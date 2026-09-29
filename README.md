@@ -16,8 +16,6 @@ A real-time fall detection application built with Python, OpenCV, and Computer V
 * **Web Dashboard:** Simple Flask-based web interface to monitor video feeds, view detection logs, and manage user authentication.
 * **Modular Architecture:** Designed to run edge inferencing locally while offloading alert events to cloud notification services.
 
----
-
 
 ---
 
@@ -75,6 +73,18 @@ Execute the core script to launch the detection engine and local web server:
 python fall_detection.py
 
 ```
+
+## 💡 Core Script (`fall_detection.py`)
+
+The main application script runs a Flask web dashboard integrated with MediaPipe Pose estimation for real-time edge fall detection.
+
+### Key Logic & Features
+* **Pose Estimation:** Tracks spatial movement using body height and torso aspect ratios.
+* **Fall Detection Logic:** Detects side, front, and back falls while preventing false alarms using consecutive frame counters and automatic reset thresholds.
+* **Alert System:** Triggers multi-threaded Pushbullet API notifications upon fall detection.
+* **Web Endpoints:**
+  * `/video_feed` — MJPEG live stream endpoint.
+  * `/predict` & `/stop_predict` — Asynchronous start/stop controls for the detection engine.
 
 Open your browser and navigate to `http://127.0.0.1:5000` (or the port specified in terminal execution) to access the dashboard.
 
