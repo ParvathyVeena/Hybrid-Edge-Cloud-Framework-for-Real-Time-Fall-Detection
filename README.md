@@ -1,15 +1,10 @@
 # Hybrid-Edge-Cloud-Framework-for-Real-Time-Fall-Detection
 Real-time fall detection using YOLOv8, MediaPipe and Pushbullet API.
-Here is a complete, production-ready `README.md` content tailored specifically to your PyCharm project structure and fall detection workflow.
 
-You can create a file named `README.md` in your main `PythonProject2` folder and paste the following content directly into it:
-
-```markdown
 # Hybrid Edge-Cloud Fall Detection System
 
 A real-time fall detection application built with Python, OpenCV, and Computer Vision models integrated into a web interface. The system processes video streams to detect fall events and send automated alerts using API integrations.
 
----
 
 ## 🌟 Key Features
 
@@ -18,49 +13,17 @@ A real-time fall detection application built with Python, OpenCV, and Computer V
 * **Web Dashboard:** Simple Flask-based web interface to monitor video feeds, view detection logs, and manage user authentication.
 * **Modular Architecture:** Designed to run edge inferencing locally while offloading alert events to cloud notification services.
 
----
-
-## 📁 Repository Structure
-
-```text
-Hybrid-Edge-Cloud-Fall-Detection/
-│
-├── templates/                 # Web application interface
-│   ├── base.html
-│   ├── index.html
-│   ├── login.html
-│   ├── model.html
-│   └── register.html
-│
-├── .gitignore                 # Exclusion rules for environment and binary files
-├── conf.json.example          # Sample configuration file for API credentials
-├── fall_detection.py          # Core processing and fall detection logic
-├── requirements.txt           # Python dependencies
-└── README.md                  # Project documentation
-
-```
-
----
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
 * Python 3.8 or higher installed on your system.
 * A webcam (for real-time stream monitoring) or test `.mp4` video files.
 
-### Installation & Setup
-
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/your-username/Hybrid-Edge-Cloud-Fall-Detection.git](https://github.com/your-username/Hybrid-Edge-Cloud-Fall-Detection.git)
-cd Hybrid-Edge-Cloud-Fall-Detection
-
-```
 
 
-2. **Set up a virtual environment:**
-```bash
+
+1. **Set up a virtual environment:**
+
 # On Windows
 python -m venv .venv
 .venv\Scripts\activate
@@ -69,14 +32,13 @@ python -m venv .venv
 python3 -m venv .venv
 source .venv/bin/activate
 
-```
 
 
-3. **Install dependencies:**
-```bash
+2. **Install dependencies:**
+
 pip install -r requirements.txt
 
-```
+
 
 
 4. **Configure environment settings:**
